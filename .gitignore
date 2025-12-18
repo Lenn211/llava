@@ -3,12 +3,17 @@ __pycache__/
 *.pyc
 .DS_Store
 runs/
-training datasets/
+training datasets/*
+!training datasets/unified_dataset/
 *.jpg
 *.png
 *.jpeg
 !examples/*.jpg
 !examples/*.png
 !examples/*.jpeg
-*.MOV
 
+
+
+!training datasets/unified_dataset/**/*.jpg
+!training datasets/unified_dataset/**/*.png
+!training datasets/unified_dataset/**/*.jpeg

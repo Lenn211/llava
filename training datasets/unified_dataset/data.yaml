@@ -1,0 +1,8 @@
+names:
+- fluorescent tube
+- fire extinguisher
+- outlet
+nc: 3
+test: /home/rishan/Desktop/LLaVA/training datasets/unified_dataset/test/images
+train: /home/rishan/Desktop/LLaVA/training datasets/unified_dataset/train/images
+val: /home/rishan/Desktop/LLaVA/training datasets/unified_dataset/valid/images
