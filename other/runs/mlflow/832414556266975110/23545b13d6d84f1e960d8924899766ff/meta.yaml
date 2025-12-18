@@ -1,0 +1,15 @@
+artifact_uri: /home/rishan/Desktop/LLaVA/runs/mlflow/832414556266975110/23545b13d6d84f1e960d8924899766ff/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '832414556266975110'
+lifecycle_stage: active
+run_id: 23545b13d6d84f1e960d8924899766ff
+run_name: yolov11x_custom20
+run_uuid: 23545b13d6d84f1e960d8924899766ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765899963363
+status: 1
+tags: []
+user_id: rishan

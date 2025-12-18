@@ -3,6 +3,8 @@ __pycache__/
 *.pyc
 .DS_Store
 runs/
+!other/runs/
+other/runs/**/epoch*.pt
 training datasets/*
 !training datasets/unified_dataset/
 *.jpg
