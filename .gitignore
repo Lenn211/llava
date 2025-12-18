@@ -10,5 +10,5 @@ training datasets/
 !examples/*.jpg
 !examples/*.png
 !examples/*.jpeg
-*.pt
 *.MOV
+
