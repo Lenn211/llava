@@ -1,0 +1,121 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║              WIFI CAMERA QUICK REFERENCE CARD                        ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ STEP 1: SETUP PHONE                                                  │
+└──────────────────────────────────────────────────────────────────────┘
+  1. Download camera app (see apps below)
+  2. Connect phone to WiFi (same network as PC!)
+  3. Open camera app
+  4. Note the IP address shown (e.g., 192.168.1.100)
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ STEP 2: TEST CONNECTION                                              │
+└──────────────────────────────────────────────────────────────────────┘
+  Option A - Quick Test:
+    python test_wifi_camera.py 192.168.1.100
+  
+  Option B - Browser Test:
+    Open in Chrome/Firefox: http://192.168.1.100:8080/video
+    (If you see video → URL works!)
+  
+  Option C - GUI Test:
+    • Enter URL in GUI
+    • Click blue TEST button
+    • Check status message
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ CAMERA APP URLs                                                      │
+└──────────────────────────────────────────────────────────────────────┘
+  DroidCam (Android):
+    → http://YOUR_IP:4747/video
+  
+  IP Webcam (Android):
+    → http://YOUR_IP:8080/videofeed
+  
+  iVCam (iPhone/Android):
+    → http://YOUR_IP:8080/video
+  
+  EpocCam (iPhone):
+    → http://YOUR_IP:8080/video
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ COMMON PROBLEMS & QUICK FIXES                                        │
+└──────────────────────────────────────────────────────────────────────┘
+  ❌ "Failed to open camera"
+     → Same WiFi? Check both devices!
+     → Firewall? Disable temporarily
+     → AP Isolation? Check router settings
+     → App running? Restart camera app
+  
+  ❌ "Cannot read frames"
+     → Try /videofeed instead of /video
+     → Try /mjpegfeed
+     → Lower resolution in app settings
+     → Move closer to WiFi router
+  
+  ❌ Laggy/Slow
+     → Use 720p or lower resolution
+     → Close other apps on phone
+     → Use 5GHz WiFi if available
+     → Try USB connection instead
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ TESTING CHECKLIST                                                    │
+└──────────────────────────────────────────────────────────────────────┘
+  [ ] Phone & PC on SAME WiFi (not cellular!)
+  [ ] Camera app running and showing IP
+  [ ] Correct IP format (192.168.X.X or 10.0.X.X)
+  [ ] URL opens in web browser
+  [ ] Firewall disabled or exception added
+  [ ] Phone not in sleep/power-save mode
+  [ ] Router AP Isolation is OFF
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ EXAMPLE WORKING SETUPS                                               │
+└──────────────────────────────────────────────────────────────────────┘
+  Setup 1 (DroidCam):
+    URL: http://192.168.1.100:4747/video
+    Resolution: 720p, 15 FPS
+    ✅ Works great!
+  
+  Setup 2 (IP Webcam):
+    URL: http://192.168.0.50:8080/videofeed
+    Resolution: 480p, 30 FPS
+    ✅ Works great!
+  
+  Setup 3 (iVCam):
+    URL: http://10.0.0.45:8080/video
+    Resolution: 1080p, 15 FPS
+    ✅ Works great!
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ EMERGENCY FALLBACK: USB CONNECTION                                   │
+└──────────────────────────────────────────────────────────────────────┘
+  1. Connect phone via USB cable
+  2. Camera app auto-detects USB
+  3. In GUI, use source: 0 or 1
+  4. More reliable than WiFi!
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ COMMANDS TO REMEMBER                                                 │
+└──────────────────────────────────────────────────────────────────────┘
+  # Test all URLs automatically
+  python test_wifi_camera.py <YOUR_PHONE_IP>
+  
+  # Run main GUI
+  python main_gemini_gui_camera.py
+  
+  # Get help
+  cat WIFI_CAMERA_TROUBLESHOOTING.md
+
+╔══════════════════════════════════════════════════════════════════════╗
+║  💡 PRO TIPS                                                         ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  • Always use TEST button before START                               ║
+║  • Lower resolution = better performance                             ║
+║  • Browser test is fastest way to verify URL                         ║
+║  • USB is more reliable than WiFi                                    ║
+║  • 5GHz WiFi > 2.4GHz WiFi (if available)                           ║
+╚══════════════════════════════════════════════════════════════════════╝

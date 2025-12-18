@@ -1,0 +1,171 @@
+{
+  "custom_model": {
+    "model_name": "Custom YOLOv8x-world",
+    "model_path": "custom_yolov8x.pt",
+    "datasets": {
+      "outlet_test_far": {
+        "dataset_name": "outlet.v1i.yolov8",
+        "expected_class": "outlet",
+        "total_images": 456,
+        "images_with_detections": 125,
+        "images_with_correct_detections": 49,
+        "total_detections": 144,
+        "correct_detections": 51,
+        "false_positives": 93,
+        "false_negatives": 331,
+        "true_positives": 51,
+        "accuracy": 10.74561403508772,
+        "detection_rate": 27.412280701754387,
+        "precision": 0.3541666666666667,
+        "recall": 0.13350785340314136,
+        "f1_score": 0.19391634980988595
+      },
+      "socket_test_close": {
+        "dataset_name": "Ai project.v1i.yolov8",
+        "expected_class": "outlet",
+        "total_images": 60,
+        "images_with_detections": 52,
+        "images_with_correct_detections": 48,
+        "total_detections": 99,
+        "correct_detections": 73,
+        "false_positives": 26,
+        "false_negatives": 8,
+        "true_positives": 73,
+        "accuracy": 80.0,
+        "detection_rate": 86.66666666666667,
+        "precision": 0.7373737373737373,
+        "recall": 0.9012345679012346,
+        "f1_score": 0.8111111111111111
+      },
+      "fluor_lamp_test": {
+        "dataset_name": "Fluorescent light detection.v1-original-with-augmentation.yolov8",
+        "expected_class": "fluorescent tube",
+        "total_images": 409,
+        "images_with_detections": 274,
+        "images_with_correct_detections": 271,
+        "total_detections": 722,
+        "correct_detections": 701,
+        "false_positives": 21,
+        "false_negatives": 135,
+        "true_positives": 701,
+        "accuracy": 66.25916870415648,
+        "detection_rate": 66.99266503667481,
+        "precision": 0.9709141274238227,
+        "recall": 0.8385167464114832,
+        "f1_score": 0.8998716302952503
+      },
+      "fire_extinguisher_test": {
+        "dataset_name": "Fire Extinguisher Finder.v1i.yolov8",
+        "expected_class": "fire extinguisher",
+        "total_images": 59,
+        "images_with_detections": 44,
+        "images_with_correct_detections": 43,
+        "total_detections": 97,
+        "correct_detections": 90,
+        "false_positives": 7,
+        "false_negatives": 15,
+        "true_positives": 90,
+        "accuracy": 72.88135593220339,
+        "detection_rate": 74.57627118644068,
+        "precision": 0.9278350515463918,
+        "recall": 0.8571428571428571,
+        "f1_score": 0.8910891089108911
+      }
+    },
+    "overall": {
+      "average_accuracy": 57.4715346678619,
+      "average_precision": 0.7475723957526546,
+      "average_recall": 0.682600506214679,
+      "average_f1_score": 0.6989970500317846,
+      "std_accuracy": 27.411350352346993,
+      "std_f1_score": 0.29365201876914626
+    }
+  },
+  "standard_model": {
+    "model_name": "Standard YOLOv8x-world",
+    "model_path": "yolov8x-world.pt",
+    "datasets": {
+      "outlet_test_far": {
+        "dataset_name": "outlet.v1i.yolov8",
+        "expected_class": "outlet",
+        "total_images": 456,
+        "images_with_detections": 421,
+        "images_with_correct_detections": 412,
+        "total_detections": 717,
+        "correct_detections": 675,
+        "false_positives": 42,
+        "false_negatives": 35,
+        "true_positives": 675,
+        "accuracy": 90.35087719298247,
+        "detection_rate": 92.32456140350878,
+        "precision": 0.9414225941422594,
+        "recall": 0.9507042253521126,
+        "f1_score": 0.9460406447091799
+      },
+      "socket_test_close": {
+        "dataset_name": "Ai project.v1i.yolov8",
+        "expected_class": "outlet",
+        "total_images": 60,
+        "images_with_detections": 5,
+        "images_with_correct_detections": 5,
+        "total_detections": 6,
+        "correct_detections": 6,
+        "false_positives": 0,
+        "false_negatives": 55,
+        "true_positives": 6,
+        "accuracy": 8.333333333333332,
+        "detection_rate": 8.333333333333332,
+        "precision": 1.0,
+        "recall": 0.09836065573770492,
+        "f1_score": 0.1791044776119403
+      },
+      "fluor_lamp_test": {
+        "dataset_name": "Fluorescent light detection.v1-original-with-augmentation.yolov8",
+        "expected_class": "fluorescent tube",
+        "total_images": 409,
+        "images_with_detections": 138,
+        "images_with_correct_detections": 127,
+        "total_detections": 305,
+        "correct_detections": 275,
+        "false_positives": 30,
+        "false_negatives": 271,
+        "true_positives": 275,
+        "accuracy": 31.05134474327628,
+        "detection_rate": 33.74083129584352,
+        "precision": 0.9016393442622951,
+        "recall": 0.5036630036630036,
+        "f1_score": 0.6462984723854289
+      },
+      "fire_extinguisher_test": {
+        "dataset_name": "Fire Extinguisher Finder.v1i.yolov8",
+        "expected_class": "fire extinguisher",
+        "total_images": 59,
+        "images_with_detections": 22,
+        "images_with_correct_detections": 20,
+        "total_detections": 67,
+        "correct_detections": 62,
+        "false_positives": 5,
+        "false_negatives": 37,
+        "true_positives": 62,
+        "accuracy": 33.89830508474576,
+        "detection_rate": 37.28813559322034,
+        "precision": 0.9253731343283582,
+        "recall": 0.6262626262626263,
+        "f1_score": 0.7469879518072289
+      }
+    },
+    "overall": {
+      "average_accuracy": 40.908465088584464,
+      "average_precision": 0.9421087681832282,
+      "average_recall": 0.5447476277538619,
+      "average_f1_score": 0.6296078866284445,
+      "std_accuracy": 30.215875332159424,
+      "std_f1_score": 0.2815757745600462
+    }
+  },
+  "comparison_summary": {
+    "custom_f1": 0.6989970500317846,
+    "standard_f1": 0.6296078866284445,
+    "difference": 0.06938916340334012
+  }
+}

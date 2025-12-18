@@ -1,0 +1,28 @@
+{
+  "instructions": {
+    "description": "Inspect the image and evaluate the listed building elements. For any element with a condition less than good, output in the format '[element]: [condition]'. If all elements are in good condition or cannot be seen, output a single dash '-'.",
+    "elements_to_check": [
+      "Walls and Facade",
+      "Windows and Doors",
+      "Pathways",
+      "Lighting Maintenance",
+      "Leak Detection",
+      "Common Areas",
+      "Fire Extinguishers",
+      "Socket inspection"
+    ],
+    "possible_conditions": [
+      "Very poor condition",
+      "Poor condition",
+      "Declining condition",
+      "Okay condition",
+      "Good condition"
+    ],
+    "output_rules": {
+      "1": "List only elements with a condition less than 'Good condition'.",
+      "2": "Do not include elements that are not visible or cannot be assessed.",
+      "3": "If all elements are in good condition or unassessable, output '-' only.",
+      "4": "Each element-condition pair should be on a new line in the format '[element]: [condition]'."
+    }
+  }
+}

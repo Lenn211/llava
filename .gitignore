@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+runs/
+training datasets/
+*.jpg
+*.png
+*.jpeg
+!examples/*.jpg
+!examples/*.png
+!examples/*.jpeg
+*.pt
+*.MOV
